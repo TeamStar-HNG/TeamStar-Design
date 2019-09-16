@@ -15,7 +15,7 @@ h1  {
     text-align: right;
 }
 h3  {
-    color: blueviolet;
+    color: #8366CC;
     font-family: 'Pacifico', cursive;
     /*font-family: 'Dancing Script', cursive;*/
 }
@@ -29,19 +29,18 @@ form p  {
     font-size: 1em;
     text-align: center
 }
-#email-label  {
+#email-label, #password-label  {
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom-color: black;
     width: 100%;
+    padding: .5em;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
 }
-#password-label   {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom-color: black;
-    width: 100%;
+  #email, #password{
+    font-size: .8em;
 }
 .checkbox  {
     display: flex;
@@ -53,9 +52,18 @@ form p  {
 .button  {
     width: 100%;
     padding: .75em 2em;
-    background-color: blueviolet;
+    background-color: #8366CC;
     color: whitesmoke;
     border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.button:hover  {
+    background-color: darkslateblue;
+    color: antiquewhite;
+}
+.button:active  {
+    top: 2px;
 }
 a  {
     text-decoration: none;
@@ -72,31 +80,33 @@ footer p  {
 }
 
 /*CSS for second page */
-.mini-secondpage  h1 {
-    text-align: center;        
-    padding-bottom: 20%;       
-} 
-.mini-secondpage  h3 {
-    text-align: center;
-    color: rgb(153, 67, 153);
-} 
 .secondpage   {
     margin: 2em 1em;
-    background-color: lavender;
+    background-color: #F6F6F6;
     text-align: center;
-    border: 2px solid whitesmoke;
-   
+      
+} 
+.mini-secondpage  h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0%;
+    text-align: center;
+    color: #8366CC;
 } 
 .mini-secondpage  p {
     text-align: center;
     color: rgb(165, 124, 165);
-    margin-bottom: 0em;
-    line-height: 0.1em;
- } 
+    margin: 0% 5%;
+} 
 .mini-secondpage  {
     box-shadow: 0 18px 16px -6px rgba(0, 0, 0, 0.4);
     background-color: white;
-    margin: 20% 10%;
-    padding-bottom: 40%;
     border-radius: .5em;
+    margin: 15% 15%;
+    padding-bottom: 2em;
+}
+.mini-secondpage img  {
+    height: 21em;
+    width: 18em;
+    margin-top: 0%;
+   
 }
