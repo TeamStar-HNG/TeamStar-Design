@@ -1,6 +1,6 @@
 body  {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 2em;
+    margin: 0 auto;
 }
 .container  {    
     display: flex;
@@ -9,7 +9,16 @@ body  {
     justify-content: space-around;
 }
 .firstpage  {
-    padding-left: 1em;
+    padding: 5em;
+    width: 30%
+}
+.welcomeMessage {
+    color: #9F9F9F;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
 }
 h1  {    
     text-align: right;
@@ -81,9 +90,11 @@ footer p  {
 
 /*CSS for second page */
 .secondpage   {
-    margin: 2em 1em;
+    /* margin: 2em 1em; */
     background-color: #F6F6F6;
     text-align: center;
+    background-image: url("images/background.png");
+    width: 60%;
       
 } 
 .mini-secondpage  h3 {
