@@ -1,112 +1,137 @@
-body  {
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 2em;
+    text-align: center;
+    background-color:  #F6F6F6;
+    color: black;
+    margin: 0 auto;
+    font-weight: 400;
 }
-.container  {    
-    display: flex;
-    flex-flow: row nowrap;    
-    flex-direction: row;
-    justify-content: space-around;
-}
-.firstpage  {
-    padding-left: 1em;
-}
-h1  {    
-    text-align: right;
-}
-h3  {
-    color: #8366CC;
-    font-family: 'Pacifico', cursive;
-    /*font-family: 'Dancing Script', cursive;*/
-}
-.social-media {
+.container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
-} 
-form p  {
-    font-size: 1em;
-    text-align: center
 }
-#email-label, #password-label  {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom-color: black;
+.firstpage{
+    display: flex;
+    flex: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 2.5em;
+}
+.secondpage{
+    display: flex;
+    flex: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.mini-secondpage img{
     width: 100%;
-    padding: .5em;
-    border-top-left-radius: .4em;
-    border-top-right-radius: .4em;
+    height: 15em;
 }
-  #email, #password{
-    font-size: .8em;
+.mini-secondpage h3{
+font-weight: bold;
 }
-.checkbox  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: .75em
-}
-
-.button  {
-    width: 100%;
-    padding: .75em 2em;
-    background-color: #8366CC;
-    color: whitesmoke;
-    border-radius: 7px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.button:hover  {
-    background-color: darkslateblue;
-    color: antiquewhite;
-}
-.button:active  {
-    top: 2px;
-}
-a  {
-    text-decoration: none;
-    color: rgb(54, 94, 163);
-}   
-.footer-star  {
-    font-size: .80em;
-    margin-bottom: 7em;
-}
-footer p  {
-    font-size: .75em;
-    
-    line-height: 0.5em;
-}
-
-/*CSS for second page */
-.secondpage   {
-    margin: 2em 1em;
-    background-color: #F6F6F6;
+.mini-secondpage p{
+    font-weight: normal;
+    font-size: small;
+    color: gray;
     text-align: center;
-      
-} 
-.mini-secondpage  h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 0%;
-    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    }
+.mini-secondpage{
+    box-shadow: 5px 5px 20px gray;
+    width: 50%;
+    height: 70%;
     color: #8366CC;
-} 
-.mini-secondpage  p {
-    text-align: center;
-    color: rgb(165, 124, 165);
-    margin: 0% 5%;
-} 
-.mini-secondpage  {
-    box-shadow: 0 18px 16px -6px rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 10px;
+}
+form{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+#email-label,#password-label {
+    width: 90%;
+    border:none;
+    border-bottom: 1.5px solid #8366CC;
+    outline: none !important;
+    margin-left: 1.3em;
+    color: black;
+}
+.button{
+    width: 90%;
     background-color: white;
-    border-radius: .5em;
-    margin: 15% 15%;
-    padding-bottom: 2em;
+    border: 2px solid #8366CC;
+    color: #8366CC;
+    height: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 2em;
 }
-.mini-secondpage img  {
-    height: 21em;
-    width: 18em;
-    margin-top: 0%;
-   
+.button:hover{
+    background-color: #8366CC;
+    color: #F6F6F6;
+    font-weight: bolder;
+}
+.checkbox p{
+    display: inline-block;
+    margin-left: 3em;
+    padding-left: 3em;
+}
+#email ,#password {
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: gray;
+}
+p{
+    text-align: center;
+}
+.footer{
+    margin-top: 20px;
+    text-align: justify;
+}
+.footer p{
+display: inline-block;
+text-align: justify;
+font-size: small;
+line-height: 1em;
+}
+img{
+    display: inline;
+    justify-content: center;
+    background-color: none;
+}
+.social-media{
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: #8366CC;
+}
+a:hover{
+    text-decoration: underline;
+}
+.footer-star{
+    font-size: small;
+    font-weight: 400;
+    text-align: center;
+}
+.footer-star a{
+    padding-left: 1em;
 }
