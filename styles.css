@@ -1,0 +1,102 @@
+body  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2em;
+}
+.container  {    
+    display: flex;
+    flex-flow: row nowrap;    
+    flex-direction: row;
+    justify-content: space-around;
+}
+.firstpage  {
+    padding-left: 1em;
+}
+h1  {    
+    text-align: right;
+}
+h3  {
+    color: blueviolet;
+    font-family: 'Pacifico', cursive;
+    /*font-family: 'Dancing Script', cursive;*/
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+} 
+form p  {
+    font-size: 1em;
+    text-align: center
+}
+#email-label  {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: black;
+    width: 100%;
+}
+#password-label   {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: black;
+    width: 100%;
+}
+.checkbox  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .75em
+}
+
+.button  {
+    width: 100%;
+    padding: .75em 2em;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border-radius: 7px;
+}
+a  {
+    text-decoration: none;
+    color: rgb(54, 94, 163);
+}   
+.footer-star  {
+    font-size: .80em;
+    margin-bottom: 7em;
+}
+footer p  {
+    font-size: .75em;
+    
+    line-height: 0.5em;
+}
+
+/*CSS for second page */
+.mini-secondpage  h1 {
+    text-align: center;        
+    padding-bottom: 20%;       
+} 
+.mini-secondpage  h3 {
+    text-align: center;
+    color: rgb(153, 67, 153);
+} 
+.secondpage   {
+    margin: 2em 1em;
+    background-color: lavender;
+    text-align: center;
+    border: 2px solid whitesmoke;
+   
+} 
+.mini-secondpage  p {
+    text-align: center;
+    color: rgb(165, 124, 165);
+    margin-bottom: 0em;
+    line-height: 0.1em;
+ } 
+.mini-secondpage  {
+    box-shadow: 0 18px 16px -6px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    margin: 20% 10%;
+    padding-bottom: 40%;
+    border-radius: .5em;
+}
