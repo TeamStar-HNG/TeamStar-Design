@@ -12,6 +12,8 @@ body{
     color: black;
     margin: 0 auto;
     font-weight: 400;
+    width: 100%;
+    height: 100%;
 }
 .container{
     display: flex;
@@ -57,6 +59,7 @@ font-weight: bold;
     margin: 0 auto;
     padding: 2em;
     border-radius: 10px;
+    background-color: #F6F6F6;
 }
 form{
     display: block;
@@ -134,4 +137,58 @@ a:hover{
 }
 .footer-star a{
     padding-left: 1em;
+}
+.blob1{
+    /* blob-shape (1) */
+background-image: url("/home/kingsley/HNGInternship2019/TeamStar-Design/Img/blob-shape (5).svg");
+position: absolute;
+width: 600px;
+height: 600px;
+left: 300px;
+top: -169px;
+z-index: -1;
+}
+.blob2{
+background-image: url('/home/kingsley/HNGInternship2019/TeamStar-Design/Img/blob-shape (3).svg');
+position: absolute;
+width: 600px;
+height: 600px;
+left: 290px;
+top: 200px;
+}
+.blob3{
+    /* blob-shape (3) */
+background-image: url('/home/kingsley/HNGInternship2019/TeamStar-Design/Img/blob-shape (4).svg');
+position: absolute;
+width: 600px;
+height: 600px;
+left: 600px;
+top: 165px;
+z-index: -1;
+}
+.blob4{
+    /* blob-shape (4) */
+background-image: url('/home/kingsley/HNGInternship2019/TeamStar-Design/Img/blob-shape (2).svg');
+position: absolute;
+width: 367px;
+height: 367px;
+left: 900px;
+top: -200px;
+z-index: -1;
+}
+hr{
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    background-color: #F6F6F6;
+}
+span hr:nth-child(2){
+    margin:20px;
+}
+span hr:nth-child(3){
+    margin: 20px;
+}
+span hr:nth-child(1){
+    margin: 20px;
+    background-color: #CCCCCC;;
 }
