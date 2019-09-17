@@ -1,112 +1,212 @@
-body  {
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 2em;
+    text-align: center;
+    background-color:  #F6F6F6;
+    color: black;
+    margin: 0 auto;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
 }
-.container  {    
+.container{
     display: flex;
-    flex-flow: row nowrap;    
     flex-direction: row;
-    justify-content: space-around;
 }
-.firstpage  {
+.firstpage{
+    display: flex;
+    flex: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 2.5em;
+}
+.welcome p{
+margin-top: 10px;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+color: #9F9F9F;
+}
+.secondpage{
+    display: flex;
+    flex: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.mini-secondpage img{
+    width: 100%;
+    height: 15em;
+}
+.mini-secondpage h3{
+font-weight: 500;
+font-size: 30px;
+line-height: 37px;
+}
+.mini-secondpage p{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color:  #9F9F9F;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    }
+.mini-secondpage{
+    box-shadow: 5px 5px 20px gray;
+    width: 50%;
+    height: 70%;
+    color: #8366CC;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+}
+form{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+#email-label,#password-label {
+    width: 90%;
+    border:none;
+    border-bottom:  2px solid #9F9F9F;
+    outline: none !important;
+    margin-left: 1.3em;
+    color: black;
+    font-weight: normal;
+    background-color: #F6F6F6;
+    height: 2em;
+}
+.button{
+    width: 90%;
+    background-color: #F6F6F6;
+    border: 2px solid #8366CC;
+    color: #8366CC;
+    height: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+.button:hover{
+    background-color: #6440BF;
+    color: #F6F6F6;
+    font-weight: bolder;
+    border: none;
+}
+.checkbox p{
+    display: inline-block;
+    margin-left: 3em;
+    padding-left: 3em;
+}
+#email ,#password {
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: gray;
+}
+p{
+    text-align: center;
+}
+.footer{
+    margin-top: 100px;
+    text-align: justify;
+}
+.footer p{
+display: inline-block;
+text-align: justify;
+font-size: 10px;
+line-height: 11px;
+}
+img{
+    display: inline;
+    justify-content: center;
+    background-color: none;
+}
+.social-media{
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: #1391EC;;
+}
+a:hover{
+    text-decoration: underline;
+}
+.footer-star{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #555555;
+}
+.footer-star a{
     padding-left: 1em;
 }
-h1  {    
-    text-align: right;
+.blob1{
+    /* blob-shape (1) */
+background-image: url("https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_5_fee8i1.svg");
+position: absolute;
+width: 600px;
+height: 600px;
+left: 300px;
+top: -169px;
+z-index: -1;
 }
-h3  {
-    color: #8366CC;
-    font-family: 'Pacifico', cursive;
-    /*font-family: 'Dancing Script', cursive;*/
+.blob2{
+background-image: url('https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_3_nlyvt7.svg');
+position: absolute;
+width: 600px;
+height: 600px;
+left: 290px;
+top: 200px;
 }
-.social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-} 
-form p  {
-    font-size: 1em;
-    text-align: center
+.blob3{
+    /* blob-shape (3) */
+background-image: url('https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_4_llulyz.svg');
+position: absolute;
+width: 600px;
+height: 600px;
+left: 600px;
+top: 165px;
+z-index: -1;
 }
-#email-label, #password-label  {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom-color: black;
-    width: 100%;
-    padding: .5em;
-    border-top-left-radius: .4em;
-    border-top-right-radius: .4em;
+.blob4{
+    /* blob-shape (4) */
+background-image: url('https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_2_nzaed1.svg');
+position: absolute;
+width: 367px;
+height: 367px;
+left: 900px;
+top: -200px;
+z-index: -1;
 }
-  #email, #password{
-    font-size: .8em;
-}
-.checkbox  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: .75em
-}
-
-.button  {
-    width: 100%;
-    padding: .75em 2em;
-    background-color: #8366CC;
-    color: whitesmoke;
-    border-radius: 7px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.button:hover  {
-    background-color: darkslateblue;
-    color: antiquewhite;
-}
-.button:active  {
-    top: 2px;
-}
-a  {
-    text-decoration: none;
-    color: rgb(54, 94, 163);
-}   
-.footer-star  {
-    font-size: .80em;
-    margin-bottom: 7em;
-}
-footer p  {
-    font-size: .75em;
-    
-    line-height: 0.5em;
-}
-
-/*CSS for second page */
-.secondpage   {
-    margin: 2em 1em;
+hr{
+    display: inline-block;
+    width: 50px;
+    height: 5px;
     background-color: #F6F6F6;
-    text-align: center;
-      
-} 
-.mini-secondpage  h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 0%;
-    text-align: center;
-    color: #8366CC;
-} 
-.mini-secondpage  p {
-    text-align: center;
-    color: rgb(165, 124, 165);
-    margin: 0% 5%;
-} 
-.mini-secondpage  {
-    box-shadow: 0 18px 16px -6px rgba(0, 0, 0, 0.4);
-    background-color: white;
-    border-radius: .5em;
-    margin: 15% 15%;
-    padding-bottom: 2em;
+    border-radius: 5px;
 }
-.mini-secondpage img  {
-    height: 21em;
-    width: 18em;
-    margin-top: 0%;
-   
+span hr:nth-child(2){
+    margin:20px;
+    
+}
+span hr:nth-child(3){
+    margin: 20px;
+    background-color: #CCCCCC;
+}
+span hr:nth-child(1){
+    margin: 20px;
+    background-color: #CCCCCC;
 }
