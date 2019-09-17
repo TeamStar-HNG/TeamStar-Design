@@ -177,7 +177,7 @@ a:hover{
 }
 .blob1{
     /* blob-shape (1) */
-background-image: url("/home/kingsley/HNGInternship2019/TeamStar-Design/Img/blob-shape (5).svg");
+background-image: url("https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_5_fee8i1.svg");
 position: absolute;
 width: 600px;
 height: 600px;
@@ -186,7 +186,7 @@ top: -169px;
 z-index: -1;
 }
 .blob2{
-background-image: url('/home/kingsley/HNGInternship2019/TeamStar-Design/Img/blob-shape (3).svg');
+background-image: url('https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_3_nlyvt7.svg');
 position: absolute;
 width: 600px;
 height: 600px;
@@ -195,7 +195,7 @@ top: 200px;
 }
 .blob3{
     /* blob-shape (3) */
-background-image: url('/home/kingsley/HNGInternship2019/TeamStar-Design/Img/blob-shape (4).svg');
+background-image: url('https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_4_llulyz.svg');
 position: absolute;
 width: 600px;
 height: 600px;
@@ -205,7 +205,7 @@ z-index: -1;
 }
 .blob4{
     /* blob-shape (4) */
-background-image: url('/home/kingsley/HNGInternship2019/TeamStar-Design/Img/blob-shape (2).svg');
+background-image: url('https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_2_nzaed1.svg');
 position: absolute;
 width: 367px;
 height: 367px;
