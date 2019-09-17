@@ -24,7 +24,6 @@
 <?php
 require('db.php');
 session_start();
-// If form submitted, insert values into the database.
 if (isset($_POST['email'])){
         // removes backslashes
  $email = stripslashes($_REQUEST['email']);
@@ -63,7 +62,7 @@ and password='".md5($password)."'";
                 <p><a href="">Forgot Password?</a></p>                
             </div>
 
-                <input class="button" type="button" type="submit" value="Log In">
+                <input class="button" name="submit" type="submit" value="Log In">
                 
         </form>
         <footer>
