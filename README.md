@@ -18,6 +18,3 @@ Backend is not allowed to use any framework - You are to hardcode your authentic
 Frontend can use frameworks and libraries
 Deadline: 22/Sept/ 2019
 Submission: use this form https://forms.gle/wEj9GnFyqo5BCnTAA
-
-# Requirements
-json-server
