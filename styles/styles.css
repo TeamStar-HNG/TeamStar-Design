@@ -25,7 +25,7 @@ html{
 .landingContainer   {
     background-color: #F6F6F6;
     text-align: center;
-    background-image: url("../images/background.png");
+    background-image: url("https://res.cloudinary.com/dga2j4uiv/image/upload/v1568805319/background.png");
     width: 70%;
     display: flex;
     justify-content: center;
