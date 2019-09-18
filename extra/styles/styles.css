@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+} 
+body  {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    background-color:  #FcFcFc;
+    color: #543948;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+.firstpage  {
+    padding: 5em;
+    width: 30%
+}
+.welcomeMessage {
+    color: #9F9F9F;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+body {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+    background-color:  #FcFcFc;
+    color: #543948;
+    margin: 0 auto;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.firstpage{
+    display: flex;
+    flex: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 2.5em;
+}
+.secondpage{
+    display: flex;
+    flex: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.mini-secondpage img{
+    width: 100%;
+    height: 15em;
+}
+.mini-secondpage h3{
+font-weight: bold;
+}
+.mini-secondpage p{
+    font-weight: normal;
+    font-size: small;
+    color: gray;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    }
+.mini-secondpage{
+    box-shadow: 5px 5px 20px gray;
+    width: 50%;
+    height: 70%;
+    color: #8366CC;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+}
+form{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+#email-label,#password-label {
+    width:90%;
+    border:none;
+    border-bottom: 1.5px solid #6440BF;
+    outline: none !important;
+    margin-left: 1.3em;
+    color: black;
+}
+.button{
+    width: 90%;
+    background-color: white;
+    border: 2px solid #6440BF;
+    color: #8366CC;
+    height: 40px;
+    margin-left:0.9em;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+.button:hover{
+    background-color: #8366CC;
+    color: #F6F6F6;
+    font-weight: bolder;
+}
+.checkbox p{
+    display: inline-block;
+    margin-left: 3em;
+    padding-left: 3em;
+}
+#email ,#password {
+    margin-left: 10px;
+    margin-right: 200px;
+    font-size: 0.8em;
+    color: gray;
+}
+
+/*CSS for second page */
+.secondpage   {
+    /* margin: 2em 1em; */
+    background-color: #F6F6F6;
+    text-align: center;
+    background-image: url("images/background.png");
+    width: 60%;
+      
+} 
+.mini-secondpage  h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0%;
+}
+p {
+    text-align: center;
+}
+.footer{
+    margin-top: 20px;
+    text-align: justify;
+}
+.footer p{
+display: inline-block;
+text-align: justify;
+font-size: small;
+line-height: 0.01cm;
+}
+img{
+    display: inline;
+    justify-content: center;
+    background-color: none;
+}
+.social-media{
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: #8366CC;
+}
+a:hover{
+    text-decoration: underline;
+}
+.footer-star{
+    font-size: small;
+    font-weight: 400;
+    text-align: center;
+}
+.footer-star a{
+    padding-left: 1em;
+}
+.blob1{
+    /* blob-shape (1) */
+background-image: url("https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_5_fee8i1.svg");
+position: absolute;
+width: 600px;
+height: 600px;
+left: 300px;
+top: -169px;
+z-index: -1;
+}
+.blob2{
+background-image: url('https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_3_nlyvt7.svg');
+position: absolute;
+width: 600px;
+height: 600px;
+left: 290px;
+top: 200px;
+}
+.blob3{
+    /* blob-shape (3) */
+background-image: url('https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_4_llulyz.svg');
+position: absolute;
+width: 600px;
+height: 600px;
+left: 600px;
+top: 165px;
+z-index: -1;
+}
+.blob4{
+    /* blob-shape (4) */
+background-image: url('https://res.cloudinary.com/kuic/image/upload/v1568712074/TeamStar%20Img/blob-shape_2_nzaed1.svg');
+position: absolute;
+width: 367px;
+height: 367px;
+left: 900px;
+top: -200px;
+z-index: -1;
+}
+hr{
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    background-color: #F6F6F6;
+}
+span hr:nth-child(2){
+    margin:20px;
+}
+span hr:nth-child(3){
+    margin: 20px;
+}
+span hr:nth-child(1){
+    margin: 20px;
+    background-color: #CCCCCC;;
+}
