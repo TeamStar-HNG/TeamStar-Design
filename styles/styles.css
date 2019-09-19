@@ -8,31 +8,34 @@ body  {
     background-color:  #FcFcFc;
     color: #543948;
     font-weight: 400;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 html{
     scroll-behavior: smooth;
 }
+html, body {
+    height:100%; 
+    margin:0; 
+}
 .mainContainer{
     display: flex;
     flex-direction: row;
-    width: 90%;
-    justify-content: center;
+    flex-flow: row nowrap;  
+    justify-content: space-around;
 }
 .authContainer  {
     padding: 5em;
-    width: 35%;
+    width: 40%;
 }
 .landingContainer   {
     background-color: #F6F6F6;
     text-align: center;
     background-image: url("https://res.cloudinary.com/dga2j4uiv/image/upload/v1568805319/background.png");
-    width: 55%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 .landingContainer > div {
     width: 50%;
@@ -90,15 +93,12 @@ form{
 p {
     text-align: center;
 }
-.footer{
-    margin-top: 20px;
-    text-align: justify;
+footer {
+    display: flex;
+    flex-direction: column;
 }
-.footer p{
-display: inline-block;
-text-align: justify;
-font-size: small;
-line-height: 0.01cm;
+footer p{
+    text-align: left;
 }
 img{
     display: inline;
@@ -126,4 +126,26 @@ a:hover{
 
 .carousel-indicators {
     bottom:-50px;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1024px to 1280px
+*/
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .authContainer  {
+        padding: 2em;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .authContainer  {
+        padding: 1em;
+    }  
 }
