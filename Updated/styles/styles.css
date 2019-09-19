@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+body  {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    background-color:  #FcFcFc;
+    color: #543948;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+html   {
+    scroll-behavior: smooth;
+}
+html, body {
+    height:100%; 
+    margin:0; 
+}
+.mainContainer  {    
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;  
+    justify-content: space-around;
+}
+.authContainer  {
+    padding: 5em;
+    width: 40%;
+    flex-flow: row nowrap;  
+    justify-content: space-around;
+}
+.logo  {
+    text-align: center;
+    background-image: url("https://res.cloudinary.com/dga2j4uiv/image/upload/v1568805319/background.png");
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landingContainer > div {
+    width: 50%;
+}
+
+.welcomeMessage {
+    color: #9F9F9F;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-top: 1em;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+} 
+.twit  {
+    width: 10.5em;
+    height: 2.15em;
+    margin-top: 1em;
+    border-radius: .3em;
+}
+.or  {
+    text-align: center;
+}
+form  {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+
+form p  {
+    font-size: 1em;
+    text-align: center; 
+}
+input:placeholder-shown {
+    font-size: .85em;
+     
+}
+#email-label, #password-label, #confirmpassword {
+    border-top: none;
+    border-left: none;
+    border-right: none;    
+    width: 95%;
+    padding: .5em;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+    outline: none !important;
+}
+  #email, #password, #confirmpassword{
+    font-size: 0.8em;
+    color: grey;
+}
+.button  {
+    width: 100%;
+    padding: .35em 2em;
+    background-color: #8366CC;
+    color: whitesmoke;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}
+.button:hover  {
+    background-color: darkslateblue;
+    color: antiquewhite;
+    font-weight: bolder;
+}
+.button:active  {
+    top: 2px;
+}
+.checkbox  {
+    font-size: .8em;
+}
+.checkbox p {
+    display: inline-block;
+    margin-left: 3em;
+    padding-left: 3em;
+}
+a  {
+    text-decoration: none;
+    color: #8366CC;
+}  
+a:hover  {
+    text-decoration: underline;
+} 
+.footer-star  {
+    font-size: .80em;
+    margin: 1em 0em 7em 0em;    
+}
+
+footer p  {
+    font-size: .75em;    
+    line-height: 1em;
+    text-align: left;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+/*CSS for sign up page */
+h4  {
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+#firstname-label, #lastname-label, #confirmpassword-label {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 95%;
+    padding: .5em;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+}
+#firstname, #lastname, #password2 {
+    font-size: .8em;
+}
+.copyright  {
+    margin-top: 7em;
+}
+.landingContainer   {
+    background-color: #F6F6F6;
+    text-align: center;
+    background-image: url("https://res.cloudinary.com/dga2j4uiv/image/upload/v1568805319/background.png");
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.mini-secondpage  h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0%;
+    text-align: center;
+    color: #8366CC;
+} 
+.mini-secondpage p{
+    font-weight: normal;      
+    color: gray;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    }
+.mini-secondpage  {
+    box-shadow: -6px 18px 16px -6px rgba(0, 0, 0, 0.4);
+    background-color: #F6F6F6;
+    border-radius: .5em;
+    margin: 24% 9%;
+    padding-bottom: 2em;
+}
+.mini-secondpage img  {
+    height: 21em;
+    width: 18em;
+    margin: 0% 15%;   
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .authContainer  {
+        padding: 0.5em;
+    }  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1024px to 1280px
+*/
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .authContainer  {
+        padding: 2em;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .authContainer  {
+        padding: 0.5em;
+    }  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    
+}
+  
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        max-width: 100%;
+    }
+    .landingContainer, .authContainer {
+        width: 100%;
+    }
+    .landingContainer {
+        margin-bottom: 2em;
+    }
+    .authContainer {
+        padding: 0.5em;
+    }
+}
