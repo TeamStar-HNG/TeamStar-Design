@@ -82,7 +82,7 @@ input:placeholder-shown {
     font-size: .85em;
      
 }
-#email-label, #password-label, #confirmpassword {
+#email, #password, #confirmpassword {
     border-top: none;
     border-left: none;
     border-right: none;    
@@ -91,10 +91,6 @@ input:placeholder-shown {
     border-top-left-radius: .4em;
     border-top-right-radius: .4em;
     outline: none !important;
-}
-  #email, #password, #confirmpassword{
-    font-size: 0.8em;
-    color: grey;
 }
 .button  {
     width: 100%;
@@ -150,7 +146,7 @@ h4  {
     font-weight: 500;
 }
 
-#firstname-label, #lastname-label, #confirmpassword-label {
+#firstname, #lastname, #confirmpassword {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -159,8 +155,9 @@ h4  {
     border-top-left-radius: .4em;
     border-top-right-radius: .4em;
 }
-#firstname, #lastname, #password2 {
+label {
     font-size: .8em;
+    color: grey;
 }
 .copyright  {
     margin-top: 7em;
