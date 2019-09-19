@@ -1,127 +1,245 @@
 * {
     box-sizing: border-box;
-} 
+}
+
 body  {
-    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    margin: 0 auto;
-    text-align: center;
-    background-color:  #FcFcFc;
-    color: #543948;
-    font-weight: 400;
-    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2em;
+     width: 90%;
     height: 100%;
 }
-html{
+html   {
     scroll-behavior: smooth;
-    
 }
-.mainContainer{
+.mainContainer  {    
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;  
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 13%;
 }
-.authContainer  {
-    padding: 5em;
-    width: 30%;
+.autoContainer  {
+    background-color: whitesmoke;
+     width: 30%;
+     margin-right: 1em;
 }
-.landingContainer   {
-    background-color: #F6F6F6;
+.logo  {
     text-align: center;
-    background-image: url("../images/background.png");
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.landingContainer > div {
-    width: 50%;
-}
+
 .welcomeMessage {
     color: #9F9F9F;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-top: 1em;
 }
-form{
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+} 
+.twit  {
+    width: 10.5em;
+    height: 2.15em;
+    margin-top: 1em;
+    border-radius: .3em;
+}
+.or  {
+    text-align: center;
+}
+form  {
     display: block;
-    width: 100%;
     margin: 0 auto;
     text-align: left;
+    width: 100%;
 }
-#email-label,#password-label {
-    width:90%;
-    border:none;
-    border-bottom: 1.5px solid #6440BF;
+
+form p  {
+    font-size: 1em;
+    text-align: center; 
+}
+input:placeholder-shown {
+    font-size: .85em;
+     
+}
+#email-label, #password-label, #confirmpassword {
+    border-top: none;
+    border-left: none;
+    border-right: none;    
+    width: 95%;
+    padding: .5em;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
     outline: none !important;
-    margin-left: 1.3em;
-    color: black;
 }
-.button{
-    width: 90%;
-    background-color: white;
-    border: 2px solid #6440BF;
-    color: #8366CC;
-    height: 40px;
-    margin-left:0.9em;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 1.2em;
-    margin-top: 2em;
+  #email, #password, #confirmpassword{
+    font-size: 0.8em;
+    color: grey;
 }
-.button:hover{
+.button  {
+    width: 100%;
+    padding: .35em 2em;
     background-color: #8366CC;
-    color: #F6F6F6;
+    color: whitesmoke;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}
+.button:hover  {
+    background-color: darkslateblue;
+    color: antiquewhite;
     font-weight: bolder;
 }
-.checkbox p{
+.button:active  {
+    top: 2px;
+}
+.checkbox  {
+    font-size: .8em;
+}
+.checkbox p {
     display: inline-block;
     margin-left: 3em;
     padding-left: 3em;
 }
-#email ,#password {
-    margin-left: 10px;
-    margin-right: 200px;
-    font-size: 0.8em;
-    color: gray;
-}
-p {
-    text-align: center;
-}
-.footer{
-    margin-top: 20px;
-    text-align: justify;
-}
-.footer p{
-display: inline-block;
-text-align: justify;
-font-size: small;
-line-height: 0.01cm;
-}
-img{
-    display: inline;
-    justify-content: center;
-    background-color: none;
-}
-.social-media{
-    background-color: transparent;
-}
-a{
+a  {
     text-decoration: none;
     color: #8366CC;
-}
-a:hover{
+}  
+a:hover  {
     text-decoration: underline;
-}
-.footer-star{
-    font-size: small;
-    font-weight: 400;
-    text-align: center;
-}
-.footer-star a{
-    padding-left: 1em;
+} 
+.footer-star  {
+    font-size: .80em;
+    margin: 1em 0em 7em 0em;    
 }
 
-.carousel-indicators {
-    bottom:-50px;
+footer p  {
+    font-size: .75em;    
+    line-height: 0.5em;
 }
+
+/*CSS for sign up page */
+h4  {
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+#firstname-label, #lastname-label, #confirmpassword-label {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 95%;
+    padding: .5em;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+}
+#firstname, #lastname, #password2 {
+    font-size: .8em;
+}
+.copyright  {
+    margin-top: 7em;
+}
+.landingContainer   {
+    background-color: #F6F6F6;
+    text-align: center;
+    background-image: url("https://res.cloudinary.com/dga2j4uiv/image/upload/v1568805319/background.png");
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    margin-top: 26%;
+   
+}
+.landingContainer > div {
+    width: 70%;
+}
+.mini-secondpage  h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0%;
+    text-align: center;
+    color: #8366CC;
+} 
+.mini-secondpage p{
+    font-weight: normal;      
+    color: gray;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    }
+.mini-secondpage  {
+    box-shadow: -6px 18px 16px -6px rgba(0, 0, 0, 0.4);
+    background-color: #F6F6F6;
+    border-radius: .5em;
+    margin: 24% 9%;
+    padding-bottom: 2em;
+}
+.mini-secondpage img  {
+    height: 21em;
+    width: 18em;
+    margin: 0% 15%;   
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .authContainer  {
+        padding: 0.5em;
+    }  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        max-width: 100%;
+    }
+    .landingContainer, .authContainer {
+        width: 100%;
+    }
+    .landingContainer {
+       margin-bottom: 2em;
+    }
+    .authContainer {
+        padding: 0.5em;
+     }
+  }
+
+
+
