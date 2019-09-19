@@ -17,16 +17,18 @@ html{
 .mainContainer{
     display: flex;
     flex-direction: row;
+    width: 90%;
+    justify-content: center;
 }
 .authContainer  {
     padding: 5em;
-    width: 30%;
+    width: 35%;
 }
 .landingContainer   {
     background-color: #F6F6F6;
     text-align: center;
     background-image: url("https://res.cloudinary.com/dga2j4uiv/image/upload/v1568805319/background.png");
-    width: 70%;
+    width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
